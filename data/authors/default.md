@@ -1,16 +1,22 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
+name: Michael Sebastian 
+avatar: /static/images/profile.png
+occupation: Student
+company: SMKN 2 Depok Sleman 
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter
 linkedin: https://www.linkedin.com
 github: https://github.com
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+My name is **Michael Sebastian Abimanyu** and I am an aspiring 3D artist, technology enthusiast, and game developer from **Yogyakarta, Indonesia**. I am deeply interested in the latest advancements in technology and is always exploring new ways to integrate cutting-edge tools and techniques into my work.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+In this site i want to share my works whether it my game devlog, my art, or just random tech stuff, Welcome to My site 👏!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+
+
+
+> Preoccupied with a single leaf, you won't see the tree. Preoccupied with a single tree, you'll miss the entire forest.
+
+
+
