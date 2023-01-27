@@ -4,9 +4,9 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
-
 import NewsletterForm from '@/components/NewsletterForm'
 
+import Image from '@/components/Image'
 const MAX_DISPLAY = 5
 
 export async function getStaticProps() {
@@ -19,11 +19,26 @@ export default function Home({ posts }) {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
-          </h1>
+          <div className="flex items-center justify-between">
+            <div className="">
+              <h1 className="pb-6 text-2xl font-extrabold leading-9 tracking-tight text-cyan-500 sm:text-2xl sm:leading-10 md:text-5xl md:leading-14">
+                My name is Michael, just a guy who loves art & technology.
+              </h1>
+            </div>
+            <div>
+              <Image
+                src="/static/images/profile.png"
+                alt="avatar"
+                width="400px"
+                height="400px"
+                // className=" [clip-path:polygon(0%_0%,100%_0%,50%_100%,0%_50%)]"
+                className="rounded-full"
+              />
+            </div>
+          </div>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             {siteMetadata.description}
           </p>
