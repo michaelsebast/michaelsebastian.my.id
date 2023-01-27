@@ -6,16 +6,16 @@ const siteMetadata = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.michaelsebastian.my.id/',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: 'https://github.com/michaelsebast/michaelsebastian.my.id.git',
   siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  image: '/static/images/profile.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
+  email: 'michael@frans.web.id',
+  github: 'https://github.com/michaelsebast',
+  twitter: 'https://twitter.com/michaelsebast_',
+  facebook: 'https://www.facebook.com/michael.sebastian.abimanyu/',
+  youtube: 'https://www.youtube.com/channel/UCpmqG3CSo2W8ykb6Ggw-VRg',
+  linkedin: 'https://www.linkedin.com/in/michael-sebastian-abimanyu-982248261',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
