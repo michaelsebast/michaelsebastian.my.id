@@ -7,7 +7,7 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.michaelsebastian.my.id/',
   siteRepo: 'https://github.com/michaelsebast/michaelsebastian.my.id.git',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/logo.svg',
   image: '/static/images/profile.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'michael@frans.web.id',

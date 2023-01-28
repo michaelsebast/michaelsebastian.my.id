@@ -5,7 +5,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import NewsletterForm from '@/components/NewsletterForm'
-
 import Image from '@/components/Image'
 const MAX_DISPLAY = 5
 
@@ -24,8 +23,8 @@ export default function Home({ posts }) {
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <div className="flex items-center justify-between">
             <div className="">
-              <h1 className="pb-6 text-2xl font-extrabold leading-9 tracking-tight text-cyan-500 sm:text-2xl sm:leading-10 md:text-5xl md:leading-14">
-                My name is Michael, just a guy who loves art & technology.
+              <h1 className="pb-6 text-2xl font-extrabold leading-9 tracking-tight text-primary-50 sm:text-2xl sm:leading-10 md:text-5xl md:leading-14">
+                My name is <span>Michael,</span> just a guy who loves art & technology.
               </h1>
             </div>
             <div>
@@ -39,9 +38,7 @@ export default function Home({ posts }) {
               />
             </div>
           </div>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">Latest Post</p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
@@ -107,9 +104,7 @@ export default function Home({ posts }) {
         </div>
       )}
       {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
+        <div className="flex items-center justify-center pt-4"></div>
       )}
     </>
   )
