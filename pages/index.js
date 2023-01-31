@@ -45,10 +45,13 @@ export default function Home({ posts }) {
         </div>
         <p className="space-y-4 text-zinc-500 dark:text-slate-300">
           <p className="my-4 leading-loose">
-            My name is Michael Sebastian Abimanyu and I am an aspiring 3D artist, technology
-            enthusiast, and game developer from Yogyakarta, Indonesia. I am deeply interested in the
-            latest advancements in technology and is always exploring new ways to integrate
-            cutting-edge tools and techniques into my work.
+            My name is{' '}
+            <a className="underline decoration-indigo-500"> Michael Sebastian Abimanyu</a> and I am
+            an aspiring <a className="underline decoration-sky-500">3D artist</a>, technology
+            enthusiast, and <a className="underline decoration-rose-500">game developer</a> from
+            Yogyakarta, Indonesia. am deeply interested in the latest advancements in technology and
+            is always exploring new ways to integrate cutting-edge tools and techniques into my
+            work.
           </p>
         </p>
         <div className="mt-8 flex flex-wrap gap-4 text-center">
@@ -116,13 +119,73 @@ export default function Home({ posts }) {
           <div className="mt-2 justify-center"></div>
         </div>
       </div>
-      <div className="content mb-8">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
-        <p className="max-w-[46ch] leading-relaxed text-zinc-500 dark:text-slate-300">
-          A selection of projects I worked on in the past few years.
+      <div className="content mb-auto">
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Blog</h2>
+        <p className="mt-auto max-w-[46ch] leading-tight text-zinc-500 dark:text-slate-300">
+          My latest blog posts 🚀
         </p>
       </div>
-      <div className="container py-12">
+      <div className="py-auto container">
+        <ul className="md:px- flex-warp divide-y divide-gray-200 dark:divide-gray-700">
+          {!posts.length && 'No posts found.'}
+          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+            const { slug, date, title, summary, tags } = frontMatter
+            return (
+              <li key={slug} className="py-2">
+                <article>
+                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
+                    <dl>
+                      <dt className="sr-only">Published on</dt>
+                      <dd className="text-base font-medium leading-7 text-gray-500 dark:text-gray-400">
+                        <time dateTime={date}>{formatDate(date)}</time>
+                      </dd>
+                    </dl>
+                    <div className="space-y-5 xl:col-span-3">
+                      <div className="space-y-6">
+                        <div>
+                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                            <Link
+                              href={`/blog/${slug}`}
+                              className="text-gray-900 dark:text-gray-100"
+                            >
+                              {title}
+                            </Link>
+                          </h2>
+                          <div className="flex flex-wrap">
+                            {tags.map((tag) => (
+                              <Tag key={tag} text={tag} />
+                            ))}
+                          </div>
+                        </div>
+                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
+                          {summary}
+                        </div>
+                      </div>
+                      <div className="text-base font-medium leading-6">
+                        <Link
+                          href={`/blog/${slug}`}
+                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                          aria-label={`Read "${title}"`}
+                        >
+                          Read more &rarr;
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </li>
+            )
+          })}
+        </ul>
+      </div>
+
+      <div className="content mb-4">
+        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
+        <p className="mt-auto max-w-[46ch] leading-tight text-zinc-500 dark:text-slate-300">
+          Projects that i've worked on 💪
+        </p>
+      </div>
+      <div className="py-auto container mb-10">
         <div className="-m-4 flex flex-wrap">
           {projectsData.map((d) => (
             <Card

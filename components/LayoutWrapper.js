@@ -1,22 +1,30 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Logo from '@/data/logo.svg'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import Image from '@/components/Image'
 
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
+      <div className="flex h-screen flex-col justify-between py-10">
+        <header className="py-auto flex items-center justify-between">
           <div>
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  <div className="mb-auto mr-auto mt-auto w-[85px] sm:mb-auto">
+                    <Image
+                      src="/static/images/logo.png"
+                      width="150px"
+                      height="150px"
+                      // className=" [clip-path:polygon(0%_0%,100%_0%,50%_100%,0%_50%)]"
+                      className="rounded-full"
+                    />
+                  </div>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
                   <div className="hidden h-6 text-2xl font-semibold sm:block">

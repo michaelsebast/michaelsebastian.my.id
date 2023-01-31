@@ -2,8 +2,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayout'
 import { PageSEO } from '@/components/SEO'
-import Card from '@/components/Card'
-import projectsData from '@/data/blogData'
+
 export const POSTS_PER_PAGE = 5
 
 export async function getStaticProps() {
@@ -21,17 +20,6 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <PageSEO title={`Blog - ${siteMetadata.author}`} description={siteMetadata.description} />
-      <div className="-m-4 flex flex-wrap">
-        {projectsData.map((d) => (
-          <Card
-            key={d.title}
-            title={d.title}
-            description={d.description}
-            imgSrc={d.imgSrc}
-            href={d.href}
-          />
-        ))}
-      </div>
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
