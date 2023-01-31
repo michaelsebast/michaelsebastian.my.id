@@ -116,11 +116,11 @@ export default function Home({ posts }) {
           </a>
         </div>
         <div className="flex w-full justify-center">
-          <div className="mt-2 justify-center"></div>
+          <div className="mt-9 justify-center"></div>
         </div>
       </div>
-      <div className="content mb-auto">
-        <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Blog</h2>
+      <div className="mb-auto">
+        <h2 className="mb-auto text-xl font-bold text-zinc-800 dark:text-white">Blog</h2>
         <p className="mt-auto max-w-[46ch] leading-tight text-zinc-500 dark:text-slate-300">
           My latest blog posts 🚀
         </p>
@@ -178,7 +178,9 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
-
+      <div className="flex w-full justify-center">
+        <div className="mt-9 justify-center"></div>
+      </div>
       <div className="content mb-4">
         <h2 className="mb-2 text-xl font-bold text-zinc-800 dark:text-white">Projects</h2>
         <p className="mt-auto max-w-[46ch] leading-tight text-zinc-500 dark:text-slate-300">
