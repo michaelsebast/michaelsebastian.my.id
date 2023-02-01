@@ -9,7 +9,7 @@ import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
 const editUrl = (fileName) =>
-  'https://github.com/michaelsebast/michaelsebastian.my.id/edit/main/data/blog/${fileName}'
+  `https://github.com/michaelsebast/michaelsebastian.my.id/edit/main/data/blog/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`
