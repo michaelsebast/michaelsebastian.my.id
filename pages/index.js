@@ -49,8 +49,8 @@ export default function Home({ posts }) {
             <a className="underline decoration-indigo-500"> Michael Sebastian Abimanyu</a> and I am
             an aspiring <a className="underline decoration-sky-500">3D artist</a>, technology
             enthusiast, and <a className="underline decoration-rose-500">game developer</a> from
-            Yogyakarta, Indonesia. am deeply interested in the latest advancements in technology and
-            is always exploring new ways to integrate cutting-edge tools and techniques into my
+            Yogyakarta, Indonesia. I am deeply interested in the latest advancements in technology
+            and is always exploring new ways to integrate cutting-edge tools and techniques into my
             work.
           </p>
         </p>
