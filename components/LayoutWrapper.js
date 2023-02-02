@@ -18,7 +18,7 @@ const LayoutWrapper = ({ children }) => {
                 <div className="mr-3">
                   <div className="mb-auto mr-auto mt-auto w-[85px] sm:mb-auto">
                     <Image
-                      src="/static/images/logo.png"
+                      src="/static/images/website-logo.png"
                       width="150px"
                       height="150px"
                       // className=" [clip-path:polygon(0%_0%,100%_0%,50%_100%,0%_50%)]"
