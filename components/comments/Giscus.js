@@ -48,7 +48,6 @@ const Giscus = () => {
     }
   }, [])
 
-  // Reload on theme change
   useEffect(() => {
     const iframe = document.querySelector('iframe.giscus-frame')
     if (!iframe) return

@@ -21,6 +21,7 @@ const LayoutWrapper = ({ children }) => {
                       src="/static/images/website-logo.png"
                       width="150px"
                       height="150px"
+                      alt="website logo"
                       className="rounded-full"
                     />
                   </div>
