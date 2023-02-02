@@ -1,17 +1,14 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { useTheme } from 'next-themes'
 
-import siteMetadata from '@/data/siteMetadata'
-
 const Giscus = () => {
   const [enableLoadComments, setEnabledLoadComments] = useState(true)
-  const { theme, resolvedTheme } = useTheme()
 
   const COMMENTS_ID = 'comments-container'
 
   const LoadComments = useCallback(() => {
     setEnabledLoadComments(false)
-    
+
     const script = document.createElement('script')
     script.src = 'https://giscus.app/client.js'
     script.setAttribute('data-repo', 'michaelsebast/michaelsebastian.my.id')
