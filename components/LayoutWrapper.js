@@ -21,7 +21,6 @@ const LayoutWrapper = ({ children }) => {
                       src="/static/images/website-logo.png"
                       width="150px"
                       height="150px"
-                      // className=" [clip-path:polygon(0%_0%,100%_0%,50%_100%,0%_50%)]"
                       className="rounded-full"
                     />
                   </div>
