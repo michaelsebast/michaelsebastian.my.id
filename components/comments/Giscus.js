@@ -48,7 +48,6 @@ const Giscus = () => {
     }
   }, [])
 
-
   useEffect(() => {
     const iframe = document.querySelector('iframe.giscus-frame')
     if (!iframe) return
