@@ -6,12 +6,6 @@ import siteMetadata from '@/data/siteMetadata'
 const Giscus = () => {
   const [enableLoadComments, setEnabledLoadComments] = useState(true)
   const { theme, resolvedTheme } = useTheme()
-  const commentsTheme =
-    siteMetadata.comment.giscusConfig.themeURL === ''
-      ? theme === 'dark' || resolvedTheme === 'dark'
-        ? siteMetadata.comment.giscusConfig.darkTheme
-        : siteMetadata.comment.giscusConfig.theme
-      : siteMetadata.comment.giscusConfig.themeURL
 
   const COMMENTS_ID = 'comments-container'
 
@@ -52,7 +46,7 @@ const Giscus = () => {
       const comments = document.getElementById(COMMENTS_ID)
       if (comments) comments.innerHTML = ''
     }
-  }, [commentsTheme])
+  }, [])
 
   // Reload on theme change
   useEffect(() => {
