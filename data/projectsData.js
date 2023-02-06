@@ -1,11 +1,9 @@
 const projectsData = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: 'Akar Liar',
+    description: `Akar Liar is a game that i made during global game jam 2023 in Berijalan Techno Centre, Yogyakarta.  In this game i work as a Visual Artist, I modeled,textured, and animated the models in this game`,
+    imgSrc: '/static/images/Akar_Liar_Title.png',
+    href: 'https://globalgamejam.org/2023/games/akar-liar-5',
   },
 ]
 
