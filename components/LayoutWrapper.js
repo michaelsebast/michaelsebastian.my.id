@@ -16,7 +16,7 @@ const LayoutWrapper = ({ children }) => {
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <div className="mb-auto mr-auto mt-auto w-[85px] sm:mb-auto">
+                  <div className="flex w-[90px] items-center">
                     <Image
                       src="/static/images/website-logo.png"
                       width="150px"
@@ -42,7 +42,7 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="rounded-sm p-1 font-medium text-gray-900 transition-colors duration-150 hover:bg-gray-100 dark:text-gray-100 dark:hover:bg-gray-800 sm:p-4"
                 >
                   {link.title}
                 </Link>
