@@ -19,8 +19,8 @@ const LayoutWrapper = ({ children }) => {
                   <div className="flex w-[90px] items-center">
                     <Image
                       src="/static/images/website-logo.png"
-                      width="150px"
-                      height="150px"
+                      width="80px"
+                      height="80px"
                       alt="website logo"
                       className="rounded-full"
                     />
