@@ -13,10 +13,11 @@ summary: In this blog i will tell you my experience making a game under 48 hours
 **Global game jam** is an event that is held in 107 countries all around the world this event is a wild and crazy party 🎉 where game developers come together, bring their laptops and caffeine, and try to make a game in 48 hours.
 
 ## What do i work in this Game Jam?
+In this experience i was given an experience to meet with a lot of talented and amazing people. Mainly my **Game Designer** and **Progammer**, my role was an **3d Artist** that was given a task to create all the 3d models in the game. P.S some were taken from [itch.io](https://itch.io/)🤣. Here are some screenshots of my works as an **3d Artist** in this game 🙌
 
 ![Character](/static/images/Monster_1.png 'monster_1') 
+
 ![Character2](/static/images/Monster_1_Colored.png 'monster_2')
-In this experience i was given an experience to meet with a lot of talented and amazing people. Mainly my **Game Designer** and **Progammer**, my role was an **3d Artist** that was given a task to create all the 3d models in the game. P.S some were taken from [itch.io](https://itch.io/)🤣. Here are some screenshots of my works as an **3d Artist** in this game 🙌
 
 ![Character](/static/images/Monster_1_Mesh.png 'monster_1')
 
