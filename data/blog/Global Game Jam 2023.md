@@ -17,8 +17,6 @@ In this experience i was given an experience to meet with a lot of talented and 
 
 ![Character](/static/images/Monster_1.png 'monster_1') 
 
-![Character2](/static/images/Monster_1_Colored.png 'monster_2')
-
 ![Character](/static/images/Monster_1_Mesh.png 'monster_1')
 
 ![Character2](/static/images/Monster_1.png 'monster_1_mesh')
