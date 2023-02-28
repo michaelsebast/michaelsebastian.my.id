@@ -1,7 +1,7 @@
 ---
 title: MatchMaker Devlog 1
 date: '2023-02-28'
-tags: ['Indonesia', 'GameDev', 'Devlog', 'Matchmaker_Game']
+tags: ['Indonesia', 'GameDev', 'Devlog', 'Matchmaker-Game']
 draft: false
 summary: Dalam devlog yang singkat ini saya akan menjelaskan game baru yang sedang saya kerjakan
 ---
