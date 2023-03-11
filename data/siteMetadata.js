@@ -9,7 +9,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/michaelsebast/michaelsebastian.my.id.git',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/profile.png',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/Website-Banner.png',
   email: 'michael@frans.web.id',
   github: 'https://github.com/michaelsebast',
   twitter: 'https://twitter.com/michaelsebast_',
