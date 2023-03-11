@@ -8,7 +8,7 @@
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap --config next-sitemap.js",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install"
   },
@@ -25,6 +25,7 @@
     "image-size": "1.0.0",
     "mdx-bundler": "^8.0.0",
     "next": "12.1.4",
+    "next-sitemap": "^4.0.5",
     "next-themes": "^0.0.14",
     "postcss": "^8.4.5",
     "preact": "^10.6.2",
